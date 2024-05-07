@@ -1,46 +1,45 @@
-
-
+:root {
+	--primary-color: #19181b; /* Primary color */
+	--secondary-color: #836c6c; /* Secondary color */
+	--background-color: #000000; /* Background color */
+}
 
 header {
-  left: 0;
-  top: 0;
-  position: fixed;
+	left: 0;
+	top: 0;
+	position: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-  text-align: left;
-  z-index: 1000;
-  border: 1px solid #2F204c;
+	text-align: left;
+	z-index: 1000;
+	border: 1px solid var(--primary-color);
 	height: 80px;
-	padding: 0 2rem;
-  background-color: #f2f2f2;
-
-  height: fit-content;
-  width: 98%;
+	padding: 0 3%;
+	background-color: var(--background-color);
+	height: fit-content;
+	width: 100%;
 }
-
 
 .navitems {
 	margin: 0 1rem;
-	color: #2F204c;
+	color: var(--primary-color);
 	text-decoration: none;
 }
 
-
 .navitems:hover {
-	color: var(--secondaryColor);
+	color: var(--secondary-color);
 }
 
 header .nav-btn {
-	padding-right : 40px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
-	color: #2F204c;
-	visibility: hidden;
-	opacity: 0;
+	visibility: visible;
+	opacity: 1;
 	font-size: 1.8rem;
+	padding-right: 7%;
 }
 
 header div,
@@ -49,97 +48,40 @@ nav {
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	header nav {
-		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		transition: 1s;
-	}
-
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
-
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
-
-	.navitems {
-		font-size: 1.5rem;
-	}
-
-}
-
-
-
-
-
-
-
-
-h3 {
-  margin: 0;
-  font-weight: normal;
-  font-size: 3%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 nav {
-  flex-grow: 1; /* Allow the nav to take the available space */
-  text-align: center;
+	flex-grow: 1;
+	text-align: center;
 }
-
 
 .navitems {
-  display: inline-block;
-  margin-right: 50px; /* Adjust as needed */
+	display: inline-block;
+	margin-right: 50px;
 }
 
-
 button {
-  font-size: 20px; /* Adjust the size as needed */
-  border: 2px solid #f2f2f2; /* Add the 'solid' style for the border */
-  padding: 20px 20px; /* Adjust the padding as needed */
-  background-color: #f2f2f2;
-  color: #616161;
-  cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 10px; /* Add border-radius for rounded corners */
+	font-size: 20px;
+	border: 2px solid var(--background-color);
+	padding: 20px 20px;
+	background-color: var(--background-color);
+	color: #616161;
+	cursor: pointer;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 10px;
 }
 
 button:hover {
-  color: #000;
+	color: #a39999;
 }
 
-.logo{
-  padding-left: 5%;
-  cursor: 'pointer';
-  height: 100px;
+.logo {
+	cursor: pointer;
+	height: 10vw;
+	max-height: 70px;
+	padding: 3%;
+	width: 100%;
 }
 
-
-
-@media only screen and (max-width: 1024px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
-
+@media only screen and (max-width: 3024px) {
 	header nav {
 		position: fixed;
 		top: -100vh;
@@ -151,7 +93,7 @@ button:hover {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: #f2f2f2;
+		background-color: var(--background-color);
 		transition: 1s;
 	}
 
@@ -167,5 +109,19 @@ button:hover {
 
 	nav a {
 		font-size: 1.5rem;
+	}
+
+	header {
+		height: auto;
+	}
+
+	.navitems {
+		font-size: 1.5rem;
+		margin-right: 0;
+	}
+
+	button {
+		font-size: 1.5rem;
+		padding: 15px 15px;
 	}
 }

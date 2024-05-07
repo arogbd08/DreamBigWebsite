@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import logo from '../assets/Swiftsynclogo.png';
+import logo from '../assets/mainlogo.png';
 import './Header.css';
 import AboutUs from './Aboutus';
 import { FaBars , FaTimes } from "react-icons/fa";
@@ -49,15 +49,15 @@ function Header() {
 
           <div className="navitems">
             <Link to="/aboutus" onClick={closeNavbar}> {/* Add onClick to close Navbar */}
-              <button onClick={scrollToTop}>About us</button>
+              <button onClick={scrollToTop}>Services</button>
             </Link>
           </div>
 
 
           <div className="navitems">
-            <ScrollLink to="contact" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
-              <button onClick={contactfunc}>Contact</button>
-            </ScrollLink>
+            <Link to="/socials" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
+              <button onClick={scrollToTop}>Socials</button>
+            </Link>
           </div>
 
 

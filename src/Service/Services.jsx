@@ -29,7 +29,7 @@ function ServiceItem({ imageSrc, altText, title, items, pagelink }) {
 }
 
 // Your component definition
-function Services() {
+function Servicepage() {
   return (
     <div className='Page'>
       <div className='sText-Area'>
@@ -68,4 +68,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Servicepage;
