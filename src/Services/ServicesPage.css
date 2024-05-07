@@ -1,0 +1,35 @@
+.services {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    padding-top: 100px;
+  }
+  
+  .services h1, .services h2 {
+    color: #003366; /* Deep blue for headers */
+    text-align: center;
+
+  }
+  
+  .services h3 {
+    color: #004488; /* Slightly lighter blue for sub-headers */
+  }
+
+  .services h4 {
+    color: #004488; /* Slightly lighter blue for sub-headers */
+    text-align: center;
+  }
+  
+  .service {
+    background-color: #f2f2f2; /* Light gray background for service sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .serviceImage img {
+    width: 100%;
+    max-width: 600px; /* Responsive image sizing */
+    display: block;
+    margin: 20px auto; /* Center image */
+  }

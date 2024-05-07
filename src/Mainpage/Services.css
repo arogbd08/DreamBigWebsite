@@ -1,0 +1,71 @@
+  .sText-Area {
+    color: #2F204C;
+    background-color: #E8F7F8; /* Light Blue Background Color */
+    padding: 30px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #2F204c;
+    width: 100%;
+
+
+    @media only screen and (max-width: 768px) 
+  {
+    padding: 0px;
+  }
+  }
+
+  
+  
+  h1{
+    font-size:80px;
+  }
+
+  h2{
+    font-size:30px;
+    font-weight: 500;
+  }
+
+
+
+  /* Services.css */
+
+.Page {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sText-Area {
+    text-align: center;
+  }
+  
+  .Service-Item {
+    margin: 50px; /* Add margin for spacing */
+    width: 450px; /* Set a fixed width for each Service-Item */
+    display: inline-block;
+    vertical-align: top; /* Align items at the top */
+    @media only screen and (max-width: 768px) 
+    {
+      width: 300px;
+    }
+  }
+  
+  .Service-Icon {
+    width: 30%; /* Make the icon fill the width of its container */
+  }
+  
+.Service-button{
+    background-color: #E8F7F8; /* Light Purple Background Color */
+    border-color: #E8F7F8;
+    color: #2F204C;
+    padding: 20px;
+    @media only screen and (max-width: 768px) 
+    {
+      color: #2F204C;
+      background-color: #d3e8f5;
+    }
+}
+
+.Service-button:hover{
+    color: #2F204C;
+    background-color: #d3e8f5;
+}
