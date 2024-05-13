@@ -6,8 +6,9 @@
   }
   
   .Text-Area {
-    color: #2F204C;
-    background-color: #D8E3F9; /* Light Purple Background Color */
+    width: 100%;
+    color: #f6f6f6;
+    background-color: #101010; /* Light Purple Background Color */
     padding: 30px; /* Add padding for spacing */
     text-align: center; /* Center align text */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +29,7 @@
 
   
   h1{
-    font-size:70px  !important;
+    font-size:0px  !important;
     @media only screen and (max-width: 768px) 
     {
       font-size:45px  !important;
