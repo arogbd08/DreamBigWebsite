@@ -3,9 +3,9 @@
 .Contact-Page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 30px;
-  color: #2F204C;
-  border: 1px solid #2F204c;
-  background-color: #E8E6F6; /* Light Purple Background Color */
+  color: #E8E6F6; /* Light Purple Background Color */
+  border: 1px solid #E8E6F6; /* Inverted border color */
+  background-color:#19181b; /* Inverted Background Color */
 }
 
 .Contact-body {
@@ -52,7 +52,7 @@
 /* Style for the form elements */
 label {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2F204C;
+  color: #E8E6F6; /* Inverted color */
   display: block;
   margin-bottom: 5px;
   font-size: 18px;
@@ -60,8 +60,8 @@ label {
 
 input,
 textarea {
-  background-color: #E8E6F6;
-  border-color: #000;
+  background-color: #2F204C; /* Inverted background color */
+  border-color: #FFF; /* Inverted border color */
   width: 100%; /* Adjust width to fill the container */
   padding: 10px;
   margin-bottom: 15px;
@@ -82,8 +82,8 @@ textarea {
 }
 
 .tton {
-  background-color: #2F204C !important;
-  color: #E8E6F6 !important;
+  background-color: #E8E6F6 !important; /* Inverted background color */
+  color: #2F204C !important; /* Inverted text color */
   border-radius: 0%;
   padding: 15px;
 }
@@ -103,4 +103,9 @@ textarea {
 }
 h1{
   text-align: center;
+}
+
+h2{
+margin-left: 10%;
+font-size: 2rem !important;
 }

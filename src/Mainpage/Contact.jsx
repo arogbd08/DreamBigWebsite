@@ -78,10 +78,9 @@ function Contact() {
 
   return (
     <div className='Contact-Page'>
-      <h1 className='title'>Contact</h1>
+      <h2 className='title'>Contact Us</h2>
       <div className='Contact-body'>
         <div className='Contact-Info'>
-          <p className='cone'>Email: info@swiftsyncservices.com.au</p>
           <br />
           <br />
           <div className='Social-Media-Icons'>

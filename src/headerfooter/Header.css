@@ -81,7 +81,43 @@ button:hover {
 	width: 100%;
 }
 
+.contact_div{
+	margin-left: 70%; /* Add some margin */
+}
+
+.contact_button {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--primary-color); /* Change border color */
+    border-radius: 15px; /* Make the border round */
+    outline: none;
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.2rem; /* Make the font size smaller */
+    padding: 16px 22px; /* Adjust padding */
+	white-space: nowrap;
+    color: var(--secondary-color); /* Change text color */
+
+}
+
+@media only screen and (max-width: 524px) {
+    .contact_button {
+        font-size: 1rem; /* Further reduce font size */
+        padding: 8px 10px; /* Further adjust padding */
+    }
+
+	.contact_div{
+		margin-left: 30%; /* Add some margin */
+	}
+}
+
+
+
+
 @media only screen and (max-width: 3024px) {
+	
+
+
 	header nav {
 		position: fixed;
 		top: -100vh;

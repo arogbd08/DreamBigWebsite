@@ -36,6 +36,11 @@ function Header() {
         <h3>
         <a href="/" ><img className='logo' src={logo} alt="Logo" onClick={scrollToTop} /></a>
         </h3>
+
+        <div className='contact_div' >
+            <button className="contact_button" onClick={contactfunc}>Contact Us</button>
+          </div>
+
         <nav ref={navRef}>
           
           <div className="navitems">
