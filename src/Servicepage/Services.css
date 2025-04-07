@@ -1,10 +1,10 @@
   .sText-Area {
-    color: #2F204C;
-    background-color: #E8F7F8; /* Light Blue Background Color */
+    color: var(--secondary-color);
+    background-color: var(--primary-color); /* Light Blue Background Color */
     padding: 30px; /* Add padding for spacing */
     text-align: center; /* Center align text */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid #2F204c;
+    border: 1px solid #161616;
     width: 100%;
 
 
@@ -54,18 +54,16 @@
   }
   
 .Service-button{
-    background-color: #E8F7F8; /* Light Purple Background Color */
-    border-color: #E8F7F8;
-    color: #2F204C;
-    padding: 20px;
-    @media only screen and (max-width: 768px) 
-    {
-      color: #2F204C;
-      background-color: #d3e8f5;
-    }
+	font-size: 20px;
+	border: 2px solid var(--background-color);
+	padding: 20px 20px;
+	background-color: var(--background-color);
+	color:  var(--secondary-color);
+	cursor: pointer;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 10px;
 }
 
 .Service-button:hover{
-    color: #2F204C;
-    background-color: #d3e8f5;
+  background-color: #1b1b1b;
 }

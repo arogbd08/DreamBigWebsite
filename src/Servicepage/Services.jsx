@@ -1,8 +1,7 @@
 import React from 'react';
-import swiftservices from '../assets/image 2.png';
-import cyberSecurityImage from '../assets/cybersecurityicon.png';
-import managedServicesImage from '../assets/mslogo.png';
-import cloudSolutionsImage from '../assets/cloudlogo.png';
+import photoImage from '../assets/photo.png';
+import socialImage from '../assets/Social.png';
+import editorImage from '../assets/video-editor.png';
 
 import './Services.css';
 
@@ -33,32 +32,32 @@ function Servicepage() {
   return (
     <div className='Page'>
       <div className='sText-Area'>
-        <h1>Services</h1>
-        <h2>A wide range of services are available. Select one of the options for details or more.</h2>
+        <h2>Services</h2>
+        <p style={{ fontSize: "40px" }}>A wide range of services are available. Select one of the options for details or more.</p>
 
         {/* Cyber Security */}
         <ServiceItem
-          imageSrc={cyberSecurityImage}
-          altText="Cyber Security"
-          title="Cyber Security"
+          imageSrc={photoImage}
+          altText="photography&videography"
+          title="Photography & Videography"
           items={['Risk Identification & Assessment', 'Supply Chain Risk Management' ,'Vulnerability Assessment','Security Posture Assessment','Cybersecurity Consultation Services']}
-          pagelink="/cyber-security"
+          pagelink="/photo-graphy"
         />
 
         {/* Managed Services */}
         <ServiceItem
-          imageSrc={managedServicesImage}
-          altText="Managed Services"
-          title="Managed Services"
+          imageSrc={socialImage}
+          altText="Managing Social Accounts"
+          title="Managing Social Accounts"
           items={['Bau Ticket Handling', 'OS Patching & Backup Services','Website Maintenance & Optimization','Custom Software & Integration','IT Consulting & Strategy']}
           pagelink="/managed-services"
         />
 
         {/* Cloud Solutions */}
         <ServiceItem
-          imageSrc={cloudSolutionsImage}
-          altText="Cloud Solutions"
-          title="Cloud Solutions"
+          imageSrc={editorImage}
+          altText="Editing & Events"
+          title="Editing & Events"
           items={['Dynamics 365','Power Platfrom','Power BI','Microsoft 365','Microsoft Copilot','SharePoint']}
           pagelink="/cloud-solutions"
         />

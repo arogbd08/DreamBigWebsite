@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Socialpage() {
+function AboutUs() {
   return (
     <div className='Page'>
         <br/>
@@ -12,5 +12,5 @@ function Socialpage() {
   );
 }
 
-export default Socialpage;
+export default AboutUs;
 

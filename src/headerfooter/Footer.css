@@ -1,12 +1,12 @@
 /* Footer.css */
 
 .Footer {
-    background-color: #f2f2f2;
+    background-color: var(--background-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
+    color: var(--secondary-color);
     padding: 20px;
     text-align: center;
-    border: 1px solid #2F204c;
+    border: 1px solid #252327;
 
   }
   

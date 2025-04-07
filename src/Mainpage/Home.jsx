@@ -5,11 +5,11 @@ import './Home.css';
 function Home() {
   return (
     <div className='Page'>
-      <div className='Text-Area'>
         <br/>
-        <h2>Dream Big Studios NP</h2>
-        <p>BRING YOUR VISION TO LIFE.</p>
-        </div>
+        <h2>We take care of your  <br/>
+          social presence, So you  <br/>
+          can focus on what you do  <br/>
+          BEST</h2>
     </div>
   );
 }

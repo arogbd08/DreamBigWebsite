@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logo from '../assets/mainlogo.png';
 import './Header.css';
-import AboutUs from './Aboutus';
 import { FaBars , FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 
@@ -24,11 +23,7 @@ function Header() {
     scroll.scrollToTop();
   };
 
-  const contactfunc = () => {
-    if (location.pathname !== "/") {
-      window.location.href = "/"; // Navigate to the home page
-    } 
-  };
+ 
 
   return (
     <div>
@@ -37,24 +32,27 @@ function Header() {
         <a href="/" ><img className='logo' src={logo} alt="Logo" onClick={scrollToTop} /></a>
         </h3>
 
-        <div className='contact_div' >
-            <button className="contact_button" onClick={contactfunc}>Contact Us</button>
-          </div>
-
         <nav ref={navRef}>
           
           <div className="navitems">
-            <Link to="/" onClick={closeNavbar}> {/* Add onClick to close Navbar */}
+            <Link to="/services" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
               <button onClick={scrollToTop}>
-                Home
+                Services
               </button>
             </Link>
           </div>
 
 
           <div className="navitems">
-            <Link to="/aboutus" onClick={closeNavbar}> {/* Add onClick to close Navbar */}
-              <button onClick={scrollToTop}>Services</button>
+            <Link to="/pricing" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
+              <button onClick={scrollToTop}>Pricing</button>
+            </Link>
+          </div>
+
+
+          <div className="navitems">
+            <Link to="/aboutus" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
+              <button onClick={scrollToTop}>About us</button>
             </Link>
           </div>
 
@@ -65,6 +63,15 @@ function Header() {
             </Link>
           </div>
 
+          <div className='contact_container'>
+          <div className="navitems">
+            <Link to="/contactus" smooth={true} duration={500} onClick={closeNavbar}> {/* Add onClick to close Navbar */}
+              <button  className="contact_button" onClick={scrollToTop}>
+                Book a Free Consultation  👀
+              </button>
+            </Link>
+          </div>
+          </div>
 
           <button
             className="nav-btn nav-close-btn"

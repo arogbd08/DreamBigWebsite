@@ -1,5 +1,4 @@
 import Home from './Home';
-import Contact from './Contact';
 
 
 
@@ -16,10 +15,6 @@ function Mainpage() {
       <br/>
       <br/>
       <Home/>
-      </div>
-      
-      <div id='contact'>
-      <Contact/>
       </div>
     </>
   );
