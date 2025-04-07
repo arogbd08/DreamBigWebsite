@@ -78,24 +78,9 @@ function Contact() {
 
   return (
     <div className='Contact-Page'>
-      <h1 className='title'>Contact</h1>
+      <h2 className='title'>Contact Us</h2>
       <div className='Contact-body'>
-        <div className='Contact-Info'>
-          <p className='cone'>Email: info@swiftsyncservices.com.au</p>
-          <br />
-          <br />
-          <div className='Social-Media-Icons'>
-            <a href='https://www.facebook.com/profile.php?id=61556670881954' target='_blank' rel='noopener noreferrer'>
-              <img src={facebookIcon} alt='Facebook' />
-            </a>
-            <a href='https://twitter.com/swiftsyncserv' target='_blank' rel='noopener noreferrer'>
-              <img src={twitterIcon} alt='Twitter' />
-            </a>
-            <a href='https://www.linkedin.com/company/swift-sync-services/about' target='_blank' rel='noopener noreferrer'>
-              <img src={linkedinIcon} alt='LinkedIn' />
-            </a>
-          </div>
-        </div>
+        
         <form onSubmit={handleSubmit} className='Form'>
           <div className='name' style={{ 'paddingRight': '10%' }}>
             <label htmlFor="firstName">First Name*</label>
@@ -157,7 +142,7 @@ function Contact() {
             />
           </div>
 
-
+          <div className="center-container">
           <div>
             <ReCAPTCHA
               sitekey="6Lein6opAAAAAMHpM9P5JrCUHP9RNGUzbFkKkqrJ"
@@ -184,6 +169,7 @@ function Contact() {
                 <p>Thank you for submitting!</p>
               </div>
             )}
+          </div>
           </div>
         </form>
       </div>
